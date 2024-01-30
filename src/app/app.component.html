@@ -1,0 +1,16 @@
+<input
+  class="input-type"
+  type="text"
+  [formControl]="input"
+  placeholder="Input your text here"
+/>
+<br />
+<input
+  class="input-type"
+  type="text"
+  readonly
+  [formControl]="output"
+  placeholder="KusKus text will appear here"
+/>
+<br />
+<button (click)="convert()">Convert To KusKus Innovation</button>
