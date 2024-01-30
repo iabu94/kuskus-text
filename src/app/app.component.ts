@@ -10,14 +10,14 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'reverse-text';
+  title = 'kuskus-text';
   input = new FormControl('');
   output = new FormControl('');
 
   convert() {
     const text = this.input.value ?? '';
     const reversedText = text.split('').reverse().join('');
-    const reversedTextSplit = reversedText.split('');
+    const reversedTextSplit = reversedText.toLowerCase().split('');
     for (let i = 0; i < reversedTextSplit.length; i++) {
       if (i % 2 !== 0) {
         reversedTextSplit[i] = reversedTextSplit[i].toUpperCase();

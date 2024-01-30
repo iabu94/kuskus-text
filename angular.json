@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "reverse-text": {
+    "kuskus-text": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/reverse-text",
+            "outputPath": "dist/kuskus-text",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "reverse-text:build:production"
+              "buildTarget": "kuskus-text:build:production"
             },
             "development": {
-              "buildTarget": "reverse-text:build:development"
+              "buildTarget": "kuskus-text:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "reverse-text:build"
+            "buildTarget": "kuskus-text:build"
           }
         },
         "test": {

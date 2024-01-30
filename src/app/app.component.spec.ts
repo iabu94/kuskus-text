@@ -14,16 +14,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'reverse-text' title`, () => {
+  it(`should have the 'kuskus-text' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('reverse-text');
+    expect(app.title).toEqual('kuskus-text');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, reverse-text');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Hello, kuskus-text'
+    );
   });
 });
